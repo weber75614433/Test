@@ -1,28 +1,30 @@
 package com.chenyo.permission.commandline;
 
 import com.chenyo.permission.PermissionCommand;
+import com.chenyo.permission.SetCommandPermission;
 import com.chenyo.permission.UserPermissionList;
 
-public class CommandAddUser implements Runnable{
+public class CommandAddUser implements Runnable, SetCommandPermission {
 
     @Override
     public void run() {
         System.out.println("AddUser");
-
         String getCommand = PermissionCommand.command;
         String[] subs = getCommand.split(" ");
-        String getPermission = PermissionCommand.userID;
 
-        if(UserPermissionList.userPermission.get(getPermission).contains("aaa.bb")
-                | UserPermissionList.userPermission.get(getPermission).equals("Admin")){
+        if(!hasPermission("aaa")){
+            System.out.println("Permission Unqualified");
+        }else if(Admin()){
+            System.out.println("Can't modified Admin");
+        }
+        else{
             if(subs.length <= 1){
                 System.out.println("user name can't be null");
             }else{
                 UserPermissionList.userPermission.put(subs[1], "aaa");
             }
-        }else{
-            System.out.println("Permission Unqualified");
         }
+
 
 
 

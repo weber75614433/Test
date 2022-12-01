@@ -17,15 +17,14 @@ public class PermissionCommand extends UserPermissionList implements Runnable{
     }
 
     public PermissionCommand(){
-        commandLineList.put("-a", new CommandLine("AddUser", new CommandAddUser()));
-        commandLineList.put("-d", new CommandLine("DeleteUser", new CommandDeleteUser()));
-        commandLineList.put("-e", new CommandLine("EditUserPermission", new CommandEditUserPermission()));
-        commandLineList.put("-p", new CommandLine("PrintList", new CommandPrintList()));
+        commandLineList.put("add", new CommandLine("AddUser", new CommandAddUser()));
+        commandLineList.put("del", new CommandLine("DeleteUser", new CommandDeleteUser()));
+        commandLineList.put("edit", new CommandLine("EditUserPermission", new CommandEditUserPermission()));
+        commandLineList.put("prt", new CommandLine("PrintList", new CommandPrintList()));
         commandLineList.put("exit", new CommandLine("LogOut", new CommandLogOut()));
     }
 
     public static void UserVerify(){
-
         while(true){
             Scanner idScanner = new Scanner(System.in);
             userID = idScanner.nextLine();
@@ -38,10 +37,8 @@ public class PermissionCommand extends UserPermissionList implements Runnable{
         }
 
     }
-
     @Override
     public void run() {
-
         while(true){
             Scanner cliScanner = new Scanner(System.in);
             command = cliScanner.nextLine();
