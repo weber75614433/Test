@@ -26,7 +26,7 @@ public class UserPermissionList {
             userPermission.put("Weber", "aaa.bb");
             userPermission.put("Danny", "aaa.bb.c.*");
             userPermission.put("Admin", "Admin.*");
-            //System.out.println("Can't find yml");
+
         }
     }
 

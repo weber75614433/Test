@@ -1,0 +1,35 @@
+INFO: 2022-12-06 10:12:22 284 Start Testing...
+INFO: 2022-12-06 10:12:25 94 User : Weber
+INFO: 2022-12-06 10:12:03 482 Start Testing...
+INFO: 2022-12-06 10:12:07 117 User : Weber
+INFO: 2022-12-06 10:12:09 566 Weber add user
+INFO: 2022-12-06 10:12:16 276 Weber del user
+INFO: 2022-12-06 10:12:23 620 Weber exit
+INFO: 2022-12-06 10:12:44 702 Start Testing...
+INFO: 2022-12-06 10:12:54 892 User : Weber
+INFO: 2022-12-06 10:12:57 892 Weber adduser
+INFO: 2022-12-06 10:12:00 773 Weber add user
+INFO: 2022-12-06 10:12:04 292 Weber del user
+INFO: 2022-12-06 10:12:06 284 Weber exit
+INFO: 2022-12-06 10:12:58 845 Start Testing...
+WARNING: 2022-12-06 10:12:01 371 iewhfohqw -> no such user
+INFO: 2022-12-06 10:12:04 906 User : Weber
+WARNING: 2022-12-06 10:12:07 219 adduser -> wrong command
+WARNING: 2022-12-06 10:12:09 259 deluser -> wrong command
+INFO: 2022-12-06 10:12:11 291 Weber add user
+INFO: 2022-12-06 10:12:13 554 Weber del user
+WARNING: 2022-12-06 10:12:15 635 ecot -> wrong command
+INFO: 2022-12-06 10:12:16 979 Weber exit
+INFO: 2022-12-06 14:12:38  Start Testing...
+INFO: 2022-12-06 14:12:46  User : Weber
+INFO: 2022-12-06 14:12:49  Weber prt
+WARNING: 2022-12-06 14:12:55   adduser -> wrong command
+INFO: 2022-12-06 14:12:57  Weber del user
+WARNING: 2022-12-06 14:12:05  yes -> wrong command
+INFO: 2022-12-06 14:12:07  Weber exit
+WARNING: 2022-12-06 14:12:18  finish 0 -> no such user
+INFO: 2022-12-06 17:12:08  Start Testing...
+INFO: 2022-12-06 17:12:17  User : Weber
+INFO: 2022-12-06 17:12:21  Weber add user
+INFO: 2022-12-06 17:12:23  Weber prt
+INFO: 2022-12-06 17:12:27  Weber exit

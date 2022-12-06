@@ -1,6 +1,7 @@
 package com.chenyo.permission.commandline;
 
-import com.chenyo.permission.LogEvent;
+
+import com.chenyo.permission.LogRecord;
 import com.chenyo.permission.PermissionCommand;
 import com.chenyo.permission.SetCommandPermission;
 import com.chenyo.permission.UserPermissionList;
@@ -14,7 +15,7 @@ public class CommandAddUser implements Runnable, SetCommandPermission {
         String[] subs = getCommand.split(" ");
 
         if(!hasPermission("aaa")){
-            LogEvent.setLogger("user : " + PermissionCommand.userID +" - "
+            LogRecord.setWarning("user : " + PermissionCommand.userID +" - "
                     +PermissionCommand.command + "Permission Unqualified");
             System.out.println("Permission Unqualified");
         }else if(Admin()){

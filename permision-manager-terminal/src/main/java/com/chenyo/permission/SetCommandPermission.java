@@ -1,7 +1,8 @@
 package com.chenyo.permission;
 
 
-import static jdk.javadoc.internal.doclets.toolkit.util.Utils.toLowerCase;
+
+import static jdk.nashorn.internal.objects.NativeString.toLowerCase;
 
 public interface SetCommandPermission {
 
